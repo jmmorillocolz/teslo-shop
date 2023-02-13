@@ -39,7 +39,6 @@ export class AuthController {
     @RawHeaders() rawHeaders: string[],
     @GetUser('email') userMail: string,
   ) {
-    console.log(userMail);
     return {
       ok: true,
       message: 'Hello World private',
